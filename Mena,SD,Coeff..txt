@@ -1,0 +1,11 @@
+Example 1: Find the population coefficient of variation of the given data set (320, 540, 480, 540, 420, 240)
+Solution: Mean = (320 + 540 + 480 + 540 + 420 + 240) / 6 = 423.33
+
+Standard Deviation = 
+√(320−423.33)2+(50−423.33)2+(480−423.33)2+(540−423.33)2+(420−423.33)2+(240−423.33)2
+                                         /6
+
+Standard Deviation = 111.6
+
+Coefficient of Variation = (Standard Deviation / mean) * 100 = (111.6 / 423.33) * 100 = 26.36%
+Answer: Coefficient of variation = 26.36%

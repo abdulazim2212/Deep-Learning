@@ -1,0 +1,24 @@
+Gradient Descent : - Gradient descent sirf ek aisa point rehta apne data ke training me jaha error/Lost function  sabse minimum rehta.
+Ek Analogy se samjhe agar to jb apan pyaaz laane jaate to pyaz pure tarkari ki gadi pe bhikrewi rehti .To apan kya karte koi ek taraf se tarkari ke gadi ke chunna chalu karte pyaaz to apne ku malum hota ke jo dusre side pe tarkari ke gadi pe achewale pyaaz ek jGh rakhewe to apan fir wahase jake pyaaz lete.
+One more example is :- Based on Age and Affordibility ek aisa function/equation banana jisme apneku ye pata chale ki person insurance lega ya nahi.To apan ek aisa point dekhte jaha age or insurance me actual or predicted value ka error sabse kam hai.Same with affordibility.
+Gradient descent ko calculate karne ke liye ye formula hai
+
+ek input hai y=mx+c
+to m is gradient descent here.
+x= Columns/Feature
+c=bias
+y=output
+gradient descent se apneku x or c dono pata chalte
+
+X new = x - learning rate * dy/dx
+x = Ek aisa point jo apan kuch bhi chun sakte(jaisa apan koi dek point se random pyaz chunna chalu karte)
+y = error apna
+learning rate = kitni tezi se apan minimum error ki taraf jare (Ye zydatar scientist 0.01 rakhte to aisa samjho ye 0.01 hi rehtta hamesha).
+
+Gradient Descent ko calculate kaise kare :-
+    for example apan calculate karre y = m * age + m * affordibility
+    yahape apan koi bhi random value lelena m(Gradient descent ki).Fir apne lost functions jaise ki MSE,MAE,Log Lost(Cross Entropy) calculate karke ke actual or predicted ka error kitna hai wo pata karna.Jo bhi error ki value hai usse apneku tukka marne me ata ke m(Gradient Descent) ki value kam karna ya badhana taki error kam ho.Ye hogya epoch 1.
+    ab epoch 2 me:-
+     m(Gradient Descent) ko calculate karna.
+     m ko epoch 2 me calculate karne ke liye ye formula hai m new = m - learning rate(0.01)*dy/dx. fir lost function calculate karna agar lost/error kam ara pichli bari se to acchi baat.
+    Agle epoches me bhi aisi m ki value same formula se calculate karna or lost/error calculate karna lost functions ka use karke.Jab apana error ekdum kam hogya to fir wo apan Best Gradient Descent lelinge.

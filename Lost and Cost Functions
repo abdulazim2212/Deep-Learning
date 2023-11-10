@@ -1,0 +1,36 @@
+In deep learning, loss functions (also known as cost functions) are used to measure how well a neural network is performing in its task. These functions help the network understand the difference between its predictions and the actual target values, allowing it to adjust its parameters (weights and biases) during training to make better predictions. Here are a few common loss functions, along with their human-friendly explanations and formulas:
+
+1.Mean Squared Error (MSE):
+
+Explanation: MSE is used in regression tasks, where the goal is to predict continuous values. It measures the average of the squared differences between the predicted values and the actual target values.
+Formula:
+MSE = (1/n) Σ(y_true - y_pred)^2
+where n is the number of data points, y_true is the actual target, and y_pred is the predicted value.
+
+2.Cross-Entropy Loss (Log Loss):
+
+Explanation: Cross-entropy loss is used in classification tasks, where the goal is to assign each input to one of several categories or classes. It measures how well the predicted class probabilities match the actual class labels.
+Formula:
+Cross-Entropy = -Σ(y_true * log(y_pred) + (1 - y_true) * log(1 - y_pred))
+where y_true is the actual binary class label (0 or 1), and y_pred is the predicted probability of the positive class.
+
+3.Hinge Loss (SVM Loss):
+
+Explanation: Hinge loss is commonly used in support vector machines (SVM) and for binary classification tasks. It encourages the correct class's margin to be as large as possible while penalizing misclassified examples.
+Formula:
+Hinge Loss = max(0, 1 - y_true * y_pred)
+where y_true is the actual binary class label (1 or -1), and y_pred is the model's raw prediction.
+
+4.Categorical Cross-Entropy:
+
+Explanation: This loss function is used in multiclass classification tasks. It measures the dissimilarity between the predicted class probabilities and the true class distributions.
+Formula:
+Categorical Cross-Entropy = -Σ(y_true * log(y_pred))
+where y_true is a one-hot encoded vector representing the true class, and y_pred is the vector of predicted class probabilities.
+
+5.Kullback-Leibler Divergence (KL Divergence):
+
+Explanation: KL Divergence is often used in probabilistic models and measures the difference between two probability distributions, such as a predicted distribution and the true distribution.
+Formula:
+KL Divergence = Σ(y_true * log(y_true / y_pred))
+where y_true and y_pred are probability distributions.
